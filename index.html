@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - GSAP實作滾動視差與動畫</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com'>
+<link rel='stylesheet' href='https://fonts.gstatic.com'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=DotGothic16&amp;display=swap''>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=DotGothic16&amp;display=swap'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Do+Hyeon&amp;display=swap'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="matrix">
+    <div class="matrixs matrix1 ">
+       <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+    <div class="matrixs matrix2">
+      <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+    <div class="matrixs matrix3">
+        <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+    <div class="matrixs matrix4">
+        <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+    <div class="matrixs matrix5">
+       <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+    <div class="matrixs matrix6">
+       <p class="headText"><span class="primary"> THE F2E </span><span class="blackText">4th</span></p>
+      <p class="headInfo"><span class="primary"> 互動式 </span><span class="blackText">設計網頁</span></p>
+    </div>
+</section>
+<section class="section2">
+  <div class="container2 z-30 card1">
+    <div class="card coolCard">
+      <ul class="text">
+        <li><h3>Cool</h3><h3>Cool</h3></li>
+        <li><h3>Cool</h3><h3>Cool</h3></li>
+        <li><h3>Cool</h3><h3>Cool</h3></li>
+      </ul>
+      <div class="infoText">羨慕別人酷酷的網頁動畫？</div>
+    </div>
+    <div class="emoji emoji1"><img src="./images/cool.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji2"><img src="./images/cool.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji3"><img src="./images/cool.jpg" alt="" srcset=""></div>
+  </div>
+  <div class="container2 z-20 card2">
+    <div class="card">
+      <ul class="text">
+        <li><h3>Wish</h3><h3>Wish</h3></li>
+        <li><h3>Wish</h3><h3>Wish</h3></li>
+        <li><h3>Wish</h3><h3>Wish</h3></li>
+      </ul>
+      <div class="infoText">滿足不了同事的許願？</div>
+    </div>
+    <div class="emoji emoji1"><img src="./images/wish.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji2"><img src="./images/wish.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji3"><img src="./images/wish.jpg" alt="" srcset=""></div>
+  </div>
+  <div class="container2 z-10 card3">
+    <div class="card">
+      <ul class="text">
+        <li><h3>怎麼</h3><h3>開始</h3></li>
+        <li><h3>暈暈</h3><h3>暈暈</h3></li>
+        <li><h3>暈暈</h3><h3>暈暈</h3></li>
+      </ul>
+      <div class="infoText">動畫技能樹太雜無從下手？</div>
+    </div>
+    <div class="emoji emoji1"><img src="./images/gosh.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji2"><img src="./images/gosh.jpg" alt="" srcset=""></div>
+    <div class="emoji emoji3"><img src="./images/gosh.jpg" alt="" srcset=""></div>
+  </div>
+</section>
+<section class="section3">
+  <div class="top">網頁設計<span>互動式</span></div>
+  <div class="middle">兩個角色進行攜手合作</div>
+  <div class="bottom">
+    <div class="left">
+      <span class="primaryText">UI</span><span>設計師</span>
+    </div>
+    <div class="icon"><img src="./images/doubleHands.jpg" alt="" srcset=""></div>
+    <div class="right">
+      <span class="primaryText">前端</span><span>工程師</span>
+    </div>
+  </div>
+</section>
+<section class="section4">
+  <div class="content">
+    <div class="top">
+      <div class="emoji emojiL"><img src="./images/yoHand.jpg" alt="" srcset=""></div>
+
+      <p>年度最強合作<br><span class="primaryText">三大主題</span>來襲
+      </p>
+      <div class="emoji emojiR"><img src="./images/yoHand.jpg" alt="" srcset=""></div>
+
+    </div>
+    <div class="bottom lightText">
+      <p>各路廠商強強聯手，<br>共同設計出接地氣的網頁合作</p>
+    </div>
+  </div>
+</section>
+
+<section class="section5">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="cards card1 swiper-slide">
+        <div class="title">Week1</div>
+        <div class="content">
+          <div class="text">The F2E 活動網站設計</div>
+          <div class="images"></div>
+        </div>
+        <div class="tags">
+          <div class="tag">#視差滾動</div>
+          <div class="tag">#板塊設計</div>
+        </div>
+        <div class="link">
+          <a>查看關卡細節</a>
+        </div>
+      </div>
+      <div class="cards card2 swiper-slide">
+        <div class="title">Week2</div>
+        <div class="content">
+          <div class="text">今晚，我想來點點簽</div>
+          <div class="images"></div>
+        </div>
+        <div class="tags">
+          <div class="tag">#Canvas</div>
+          <div class="tag">#凱鈿行動科技</div>
+        </div>
+        <div class="link">
+          <a>查看關卡細節</a>
+        </div>
+      </div>
+      <div class="cards card3 swiper-slide">
+        <div class="title">Week3</div>
+        <div class="content">
+          <div class="text">Scrum 新手村</div>
+          <div class="images"></div>
+        </div>
+        <div class="tags">
+          <div class="tag">#JS draggable</div>
+          <div class="tag">#鈦坦科技</div>
+        </div>
+        <div class="link">
+          <a>查看關卡細節</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2.8,
+      spaceBetween: 40,
+      grabCursor: true,
+    });
+  </script>
+</section>
+
+
+<section class="section6">
+  <div class="contest">活動說明</div>
+  <div class="swiper infoSwiper">
+    <div class="swiper-wrapper">
+      <div class="steps step1 swiper-slide">
+        <div class="title">Sign up</div>
+        <div class="info">開放報名：10/13 ~ 10/30<br>截止前可修改報名組別</div>
+      </div>
+      <div class="steps step2 swiper-slide">
+        <div class="title">Start</div>
+        <div class="info">登入作品：10/31 ~ 11/28<br>UI組、團體組開賽 10/31 <br>前端組開賽 11/7</div>
+      </div>
+      <div class="steps step3 swiper-slide">
+        <div class="title">Bonus</div>
+        <div class="info">主題豐厚獎金等著你</div>
+      </div>
+      <div class="steps step4 swiper-slide">
+        <div class="title">Instruction</div>
+        <div class="info">活動採用UI、前端接力合作形式，前端工程師可以採用UI設計師的設計稿，一同產出完整的作品</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper(".infoSwiper", {
+      slidesPerView: 2.5,
+      spaceBetween: 40,
+      grabCursor: true,
+    });
+  </script>
+</section>
+<section class="section7">
+  <p>區區修煉已經無法滿足<br>了嗎？還有比賽等著你</p>
+</section>
+
+<section class="section8">
+  <div class="left">
+    <div class="title">Evaluation Mechanism</div>
+    <div class="content">
+      <ul>
+        <li>初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單</li>
+        <li>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right">
+     <div class="title">Awards</div>
+     <div class="content">
+       <ul>
+         <li>初選佳作 共六十位 數位獎狀 <br><span class="small">每週主題個人組十位、團體組十組</span></li>
+         <li>每週主題個人組十位、團體組十組<br><span class="small">每週主題各 2 名，設計 1 位、前端 1 位</span></li>
+         <li>團體企業獎 共三組 NTD 10,000/組<br><span class="small">每週主題各 1 組</span></li>
+         <li>以上皆提供完賽數位獎狀</li>
+       </ul>
+     </div>
+  </div>
+</section>
+<section class="section9">
+  <div class="top">可不可以點一下下就好</div>
+  <div class="btn">立即報名</div>
+</section>
+<section class="section10">
+  <div class="top">鑽石級贊助單位<span>太棒惹</span></div>
+  <div class="bottom">
+    <div class="company">
+      <a target="_blank" href="https://blockstudio.tw/">
+        <img src="./images/blockstudio.jpg" alt="" srcset=""></div>
+      </a>
+    <div class="company">
+      <a target="_blank" href="https://titansoft.com/tw">
+        <img src="./images/tatansoft.jpg" alt="" srcset=""></div>
+      </a>
+    <div class="company">
+      <a target="_blank" href="https://www.kdanmobile.com/zh-tw">
+        <img src="./images/kdanmobile.jpg" alt="" srcset=""></div>
+      </a>
+  </div>
+  <div class="copyRight">Copyright © 2022 HexSchool, Chihling Kuo. All rights reserved.</div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
