@@ -10,76 +10,67 @@ const srollMT = gsap.timeline({
 srollMT.to(".matrix1",{ 
   top: "10%",
   left: 0,
-  duration: 10
 }).to(".matrix2",{ 
   top: "10%",
   left: "-20px",
-  duration: 10
 },"<").to(".matrix3",{ 
   top: "14%",
   left: "-32px",
-  duration: 10
 },"<").to(".matrix4",{ 
   top: "14%",
   left: "-52px",
-  duration: 10
 },"<").to(".matrix5",{ 
   top: "18%",
   left: "-64px",
-  duration: 10
 },"<").to(".matrix6",{ 
   top: "18%",
   left: "-84px",
-  duration: 10
 },"<")
 
 
 srollMT.to(".matrix1",{ 
   top: "10%",
   left: 0,
-  duration: 15
 }).to(".matrix2",{ 
   top: "10%",
   left: "-20px",
-  duration: 10,
   opacity:0 ,
 },"<").to(".matrix3",{ 
   top: "88px",
   left: "-40px",
-  duration: 10,
   opacity:0 ,
 },"<").to(".matrix4",{ 
   top: "88px",
   left: "-60px",
-  duration: 10,
   opacity:0 ,
 },"<").to(".matrix5",{ 
   top: "90px",
   left: "-80px",
-  duration: 10,
   opacity:0 ,
 },"<").to(".matrix6",{ 
   top: "92px",
   left: "-100px",
-  duration: 10,
   opacity:0 ,
 },"<").to(".primary",{
   color: "#f1cb04",
-  duration: 12,
 },"<").to(".blackText",{
   color: "#000",
-  duration: 12,
-},"<").to(".matrix",{
-  background: "#fff",
-  duration: 12,
+},"<").to(".nav",{
+  background: "transparent",
+  color: "#000",
+},"<").to(".nav-group .nav-item a",{
+  color: "#000",
 },"<")
 
 
 srollMT.to(".matrix1",{ 
-  top: "-20px",
+  top: "0",
   opacity:0 ,
-  duration: 15
-})
+}).to(".matrix",{
+  background: "#fff",
+},"<")
+
+
 
 const srollS2 = gsap.timeline({
   scrollTrigger: {
@@ -128,7 +119,7 @@ const srollS3 = gsap.timeline({
   },
 });
 srollS3.to(".section3 .bottom .left",{ opacity: 1 , x: 0
-}).to(".section3 .bottom .icon",{ opacity:1,y:0
+}).to(".section3 .bottom .icon",{ opacity:1,y:-10
 },"<").to(".section3 .bottom .right",{ opacity:1,x:0
 },"<")
 

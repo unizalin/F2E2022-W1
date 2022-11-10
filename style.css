@@ -21,8 +21,52 @@
 body {
   background-color: #333;
 }
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 30;
+}
+nav .container-fluid{
+  display: flex;
+  justify-content: end;
+}
+
+nav .container-fluid .navbar-logo{
+  border-right: 1px solid #fff;
+  padding-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .container-fluid .navbar-logo img{
+  width: 80%;
+  line-height: 32px;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-group ul{
+  display: flex;
+}
+.nav-group .nav-item a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: hsla(0,0%,100%,.55);
+}
+.nav-group .nav-item a:hover{
+  color:#fff;
+}
+
+
+
 
 section {
+  width: 100%;
   height: 100vh;
 }
 
@@ -40,10 +84,10 @@ section {
   position: absolute;
 }
 .matrix .headText {
-  font-size: 11rem;
+  font-size: 200px;
 }
 .matrix .headInfo {
-  font-size: 6.8rem;
+  font-size: 180px;
 }
 
 .matrixs.matrix1 {
@@ -72,7 +116,6 @@ section {
 
 .section2 {
   overflow: hidden;
-  height: 100vh;
   background-color: #fff;
 }
 .section2 .container2 {
@@ -118,13 +161,13 @@ section {
 }
 
 .section2 .emoji {
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
   position: absolute;
 }
 .section2 .emoji img{
-  width: 120px;
+  width: 220px;
   border-radius: 100%;
 }
 .section2 .emoji1 {
@@ -187,10 +230,10 @@ section {
   color: #fafafa;
 }
 .section3 .icon{
-   width: 80px;
+   width: 166px;
 }
 .section3 .icon img{
-  width: 80px;
+  width: 100%;
 }
 .section3 .bottom {
   display: flex;
@@ -218,7 +261,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
 }
 .section4 .content{
   opacity: 0;
@@ -232,18 +274,18 @@ section {
 }
 .section4 .top .emoji {
   position: absolute;
-  width: 220px;
+  width: 180px;
 }
 .section4 .top .emoji img{
-  width: 220px;
+  width: 180px;
 }
 .section4 .top .emojiL {
   top: 50%;
-  left: -4%;
+  left: 12%;
 }
 .section4 .top .emojiR {
   top: 50%;
-  right: 0;
+  right: 12%;
 }
 .section4 .bottom {
   margin-top: 120px;
@@ -252,9 +294,8 @@ section {
   text-align: center;
 }
 
-.section5 {
-  width: 100%;
-  height: 100vh;
+*{
+  /* outline: 1px solid red; */
 }
 .section5 .swiper {
   width: 100%;
@@ -264,7 +305,7 @@ section {
   left: 8%;
 }
 .section5 .cards {
-  width: 420px;
+  width: 420px !important;
   height: 620px;
   padding: 0 24px;
   background-color: #424242;
@@ -290,15 +331,128 @@ section {
   color: #fafafa;
 }
 .section5 .cards .images {
+  width: 100%;
   height: 280px;
 }
+.section5 .card1 .images .left{
+  height: 140px;
+  position: absolute;
+  left: 8%;
+  bottom: 16%;
+  z-index: 4;
+}
+.section5 .card1 .images .left .vector{
+  position: absolute;
+  left: 16%;
+  top: 20%;
+}
+.section5 .card1 .images .right{
+  height: 140px;
+  position: absolute;
+  right: 16%;
+  top: 8%;
+}
+.section5 .card1 .images .right .vector{
+  position: absolute;
+  right: 16%;
+  top: 20%;
+}
+.section5 .card1:hover .right{
+    top: 6%;
+    right: 12%;
+    transition: 0.5s ease-in-out;
+}
+
+.section5 .card1:hover .left{
+  bottom: 6%;
+  left: 4%;
+  transition: 0.5s ease-in-out;
+}
+
+.section5 .card2 .images .table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.section5 .card2 .images .table .inside{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.section5 .card2 .images .leftText{
+  position: absolute;
+  left: 16%;
+  top: 36%;
+}
+.section5 .card2 .images .rightText{
+  position: absolute;
+  right: 20%;
+  bottom: 30%;
+}
+.section5 .card2 .images .pen{
+  position: absolute;
+  right: 36%;
+  top: 8%;
+}
+.section5 .card2 .images .pen .poly{
+  position: absolute;
+  left: 0;
+  bottom: -4%;
+}
+.section5 .card2:hover .leftText{
+  left: 12%;
+  transition: 0.5s ease-in-out;
+}
+.section5 .card2:hover .rightText{
+  right: 12%;
+  transition: 0.5s ease-in-out;
+}
+.section5 .card2:hover .pen{
+  transform: rotate(-8deg);
+  transition: 0.5s ease-in-out;
+}
+.section5 .card3 .images .scrum1{
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+}
+.section5 .card3 .images .scrum2{
+  position: absolute;
+  bottom: 12%;
+  left: 28%;
+}
+.section5 .card3 .images .scrum3{
+  position: absolute;
+  bottom: 8%;
+  right: 12%;
+}
+.section5 .card3:hover .scrum1{
+  left: 9%;
+  transition: 0.5s ease-in-out;
+}
+.section5 .card3:hover .scrum2{
+  transform: rotate(-4deg);
+  transition: 0.5s ease-in-out;
+}
+.section5 .card3:hover .scrum3{
+  right: 13%;
+  transition: 0.5s ease-in-out;
+}
+.section5 .cards.card4{
+  width: 200px!important;
+  background-color: #333;
+  box-shadow: unset;
+}
+
 .section5 .cards .tags {
   display: flex;
 }
 .section5 .cards .tags .tag {
   border: 1px solid #fafafa;
   color: #fafafa;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 54px;
   margin: 8px;
   margin-left: 0;
@@ -322,9 +476,7 @@ section {
 }
 
 .section6 {
-  width: 100%;
-  height: 100vh;
-  background-color: #333;
+  background:linear-gradient(#333 90%,#fff 90%,#fff 90.5%,#333 90.5%);
 }
 .section6 .contest {
   position: absolute;
@@ -356,6 +508,14 @@ section {
   line-height: 56px;
   color: #FAFAFA;
 }
+.section6 .steps .bottom{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: #FDD609;
+  position: absolute;
+  bottom: 0%;
+}
 
 .section7 {
   display: flex;
@@ -371,8 +531,6 @@ section {
 }
 
 .section8{
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -396,19 +554,20 @@ section {
 .section8 .content ul li{
   margin-bottom: 20px;
 }
+.section8 .content ul li .info{
+  color: #FFF1AA;
+}
 .section8 .content span.small{
   font-size: 18px;
 }
 
 .section9{
-  width: 100%;
-  height: 100vh;
   background: #F5F5F5;
 }
 .section9 .top{
   width: 100%;
   position: absolute;
-  top: 28%;
+  top: 24%;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
@@ -418,28 +577,35 @@ section {
   color: transparent;
   -webkit-text-stroke: 1px #000;
 }
+.section9 .bottom{
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
 .section9 .btn{
   width: 488px;
   height: 166px;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   border-radius: 8px;
-  transform: translateX(-50%);
+  transform: translateY(25%);
   font-weight: 700;
   font-size: 122px;
   line-height: 1.5;
   background-color: #F1CB04;
   color:#000;
+  margin-right: 20px;
 }
 .section9 .btn:hover{
   background-color: #F19204;
 }
+.section9 .icon{
+  width: 260px;
+  height: 260px;
+}
 
 .section10 {
-  width: 100%;
-  height: 100vh;
   background: #F5F5F5;
 }
 .section10 .top{
