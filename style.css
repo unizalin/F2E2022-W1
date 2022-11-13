@@ -19,7 +19,11 @@
 }
 
 body {
+  width: 100%;
   background-color: #333;
+}
+.pin-spacer{
+  width: 100% !important;
 }
 nav{
   position: fixed;
@@ -39,9 +43,13 @@ nav .container-fluid .navbar-logo{
   justify-content: center;
   align-items: center;
 }
-nav .container-fluid .navbar-logo img{
-  width: 80%;
-  line-height: 32px;
+nav .container-fluid .navbar-logo{
+  font-family: 'Do Hyeon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-decoration: none;
+  color: hsla(0,0%,100%,.55);
 }
 ul{
   list-style: none;
@@ -56,6 +64,9 @@ ul{
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: hsla(0,0%,100%,.55);
+}
+.nav-group .nav-item a:active {
   color: hsla(0,0%,100%,.55);
 }
 .nav-group .nav-item a:hover{
@@ -155,7 +166,7 @@ section {
   font-size: 2.4rem;
   text-align: center;
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -665,4 +676,133 @@ section {
   text-align: center;
   bottom: 4%;
 }
-.
+
+@media (max-width: 1023px) {
+  .matrixs.matrix1 {
+    transform: rotate(-10deg) translateX(20px) translateY(10%);
+  }
+  
+  .matrixs.matrix2 {
+    transform: rotate(-10deg) translateX(40px) translateY(10%);
+  }
+  
+  .matrixs.matrix3 {
+    transform: rotate(-10deg) translateX(60px) translateY(10%);
+  }
+  
+  .matrixs.matrix4 {
+    transform: rotate(-10deg) translateX(80px) translateY(10%);
+  }
+  
+  .matrixs.matrix5 {
+    transform: rotate(-10deg) translateX(100px) translateY(10%);
+  }
+  
+  .matrixs.matrix6 {
+    transform: rotate(-10deg) translateX(120px) translateY(10%);
+  }
+  .section2 .card {
+    bottom: 50%;
+    transform: translate(-50%) scale(1.7)rotate(-4deg);
+  }
+  .section2 .card .text li {
+    font-size: 92px;
+  }
+  .section2 .emoji {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: absolute;
+  }
+  .section2 .emoji img{
+    width: 180px;
+    border-radius: 100%;
+  }
+  .section2 .card .infoText {
+    font-size: 72px;
+    transform: translateX(-50%)translateY(50%);
+  }
+  .section3 .top {
+    padding: 160px 0 0 8%;
+    text-align: left;
+  }
+  .section3 .top span {
+    font-size: 122px;
+    position: absolute;
+    left: 28%;
+    top: 0;
+  }
+  .section4 .top {
+    font-size: 320px;
+  }
+  .section4 .top .emoji{
+    top: unset;
+    bottom: -32%;
+  }
+  .section4 .bottom {
+    display: none;
+  }
+  .swiper-wrapper{
+    flex-direction: column;
+  }
+  .section5 .swiper{
+    top: 4%;
+  }
+  .section5 .cards{
+    width: 80% !important;
+    margin: 40px;
+  }
+  .section7 p{
+    font-size: 220px;
+  }
+  .section8{
+    flex-direction: column;
+    justify-content: space-around
+  }
+  .section8 .left, .section8 .right{
+    height: unset;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section8 .title{
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .section8 .content{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .section8 .content span.small{
+    font-size: 40px;
+  }
+  .section9 .top{
+    top: 4%;
+    font-size: 280px;
+  }
+  .section9 .bottom{
+    top: unset;
+    bottom: 4%;
+  }
+  .section10{
+    padding: 20px;
+    height: 100%;
+  }
+  .section10 .top{
+    font-size: 220px;
+    position: unset;
+    top: unset;
+  }
+  .section10 .bottom{
+    width: 100%;
+    margin: 0 auto;
+    position: unset;
+    transform: unset;
+    flex-direction: column;
+  }
+  .section10 .bottom .company{
+    margin: 40px;
+  }
+  .section10 .copyRight {
+    bottom: 1%;
+  }
+}

@@ -60,6 +60,9 @@ srollMT.to(".matrix1",{
   color: "#000",
 },"<").to(".nav-group .nav-item a",{
   color: "#000",
+},"<").to("nav .container-fluid .navbar-logo",{
+  color: "#000",
+  borderColor: "#000"
 },"<")
 
 
@@ -183,26 +186,5 @@ srollS8.to(".section8 .left",{
   y:0
 })
 
-const srollS9 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".section9", 
-    pin: true, //重要！ pin需設為true
-    scrub: true,
-  },
-});
 
-srollS8.to(".section9 .left",{
-  y:0
-})
 
-const srollS10 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".section10", 
-    pin: true, //重要！ pin需設為true
-    scrub: true,
-  },
-});
-
-srollS10.to(".section10 .top",{
-  y:0
-})
